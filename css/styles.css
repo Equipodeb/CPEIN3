@@ -1,0 +1,222 @@
+body{
+  background-color: white;
+}
+.text-center {
+  text-align: center;
+  margin: 0px auto;
+}
+.container {
+  max-width: 95%;
+  text-align: left;
+  margin: 30px auto;
+}
+.free-coins{
+  display: flex;
+  justify-content: center;
+}
+.free-coins button{ 
+  background: red;
+  border: 1px solid black;
+  color: white;
+  border-radius: 5px;
+  width: 230px;
+  height: 80px;
+  font-size: 20px;
+}
+.nav a{
+  color: red;
+  text-decoration: none;
+}
+.icon-logo img{
+  margin:300px auto;
+}
+.aboutUs{
+  margin: 30px auto;
+}
+.window {
+  background: blue;
+  padding: 3px;
+}
+.window a {
+  color: yellow;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+.hs {
+  color: blue;
+  font-size: 25px;
+}
+.courses h2{
+  font-size: 35px;
+}
+.premiun{
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto;
+}
+.premiun-left{
+  width: 30%;
+}
+.premiun-left h3{
+  font-size: 25px;
+}
+.premiun-left p{
+  font-size: 20px;
+}
+.premiun-center{
+  width: 30%;
+}
+.premiun-rigth{
+  background-color: blue;
+  color: white;
+  text-align: center;
+  width: 30%;
+}
+.premiun-rigth{
+  width: 30%;
+}
+.free{
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto;
+}
+.free-left{
+  width: 30%;
+}
+.free-left h3{
+  font-size: 25px;
+  margin: 0px;
+}
+.free-left p{
+  font-size: 20px;
+}
+.free-rigth{
+  background-color: blue;
+  color: white;
+  text-align: center;
+  width: 30%;
+}
+.free-center{
+  width: 30%;
+}
+.Fuentes {
+  color: white;
+}
+
+p.bolder {
+  font-weight: 200;
+}
+.pago {
+  color: red;
+  background: white;
+}
+.estilo {
+  background: white;
+  color: white;
+}
+
+.rojo {
+  color: red;
+}
+
+.estilo:hover {
+  background: silver;
+}
+
+.s2 {
+  color: red;
+}
+
+.td {
+  background: blue;
+  color: white;
+}
+
+.YE {
+  color: yellow;
+}
+
+.negro {
+  background: black;
+}
+
+.white {
+  color: white;
+}
+
+.ylw {
+  background: yellow;
+}
+
+
+.footer{
+  text-align: left;
+  background: black;
+  right: 0;
+  left: 0;
+  position: absolute;
+  color: white;
+  padding: 2.5%;
+  margin: 0px auto;
+}
+
+.TITULOCOMOGANAR{
+
+  
+ color: blue;
+
+
+}
+.parrafom{
+
+
+  color:red;
+}
+
+.relleno{
+
+
+  background: yellow;
+}
+/** Media Queries **/
+
+@media (max-width:500px){
+  .premiun{
+    flex-direction: column;
+  }
+  .premiun h3{
+    text-align: center;
+  }
+  .premiun-left{
+    width: 100%;
+  }
+  .premiun-center{
+    width: 100%;
+  }
+  .premiun-rigth{
+    width: 100%;
+  }
+  .free{
+    flex-direction: column;
+  }
+  .free h3{
+    text-align: center;
+  }
+  .free-left{
+    width: 100%;
+  }
+  .free-center{
+    width: 100%;
+  }
+  .free-rigth{
+    width: 100%;
+  }
+  .nav{
+    flex-direction: column;
+    text-align: center;
+  }
+  .nav li{
+    border-bottom: 1px solid #808080;
+  }
+}

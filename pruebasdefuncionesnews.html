@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		var value=50;
+		var vendercins2;
+		var redirija;
+		
+	 vendercins2 = parseInt(prompt("Tu balance total es de\n"+value+"\t coins\n cuantos deseas vender? (1-50)"));
+
+	switch(vendercins2){
+    case 1:
+     redirija = confirm("Estas a punto de vender 1 coin");
+
+      if (redirija==true) {
+
+    	location.href="in.html";
+      }
+
+      else{
+
+      	alert("Entiendo, aun no estas seguro de querer vender. Ok. Para continuar.")
+      }
+     break;
+
+     case 2:
+     alert("no es correcto");
+     break;
+
+	}
+
+	</script>
+	<title>probando funciones nuevas</title>
+</head>
+<body>
+
+</body>
+</html>

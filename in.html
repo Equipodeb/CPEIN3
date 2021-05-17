@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>InformacionCOINCPEIN</title>
+<script>
+	
+
+
+	function vendercoins(){
+					
+					var vendercins,recibircoins,vendercins2=50;
+					//aqui estamos almacenando 50 coins en la segunda variable ya que la primera sera utilizada para verificar
+
+	vendercins = confirm("Estas a un paso de vender tus 50 Coins.");
+	//aqui reconvertimos de modo que sera eliminado el valor anterior de 50 coins para evitar esto cree un vendercins2 para almacenar
+
+	if (vendercins==true) {
+		//aqui el usuario dice ok y es dirigido a lo que hay dentro de el if que fue evaluado como verdadero
+
+					recibircoins = prompt("Tu balance total es de\n"+vendercins2+"\t coins\n cuantos deseas vender (1-50)");
+					//hasta aqui el usuario recibe un balance de sus coins pero tambien tiene una caja desde donde podria vender sus coins a otros usuarios aqui laidea es que le sean retirados de su cuenta he aqui como hacerle	aqui no se retiro el valor de 50 coins que tenia la variable		
+								
+					alert("Confirmar vender:("+recibircoins+")"+"\tcoins, al presionar ok o aceptar aceptas que se enviaran("+recibircoins+")coins, a una de las cuentas en existencia para ser depositados en las misma y se reduciran de tu balance");
+
+					//aqui estoy incluyendo el operador - que para restar en base a el dato proporcionado desde el prompt que sera la cantidad que sera quitada
+
+                 location.href= "Areadecomprascoin.html";
+					
+
+}
+
+    else{
+    	alert("Entendido. Sigue en la pagina.");
+    }
+
+		}
+</script>
+
+
+	<style>
+		
+		.but{
+		
+			background-color:red;
+			color:yellow;
+		}
+
+
+	table{
+			border-color:yellow;
+			 border-spacing: 10px 5px;
+			 border-right:yellow;
+
+		}
+
+    
+		* {
+				margin:0px;
+				padding:0px;
+			}
+			
+			#header {
+				margin:auto;
+				width:500px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			
+			ul, ol {
+				list-style:none;
+			}
+			
+			.nav > li {
+				float:left;
+			}
+			
+			.nav li a {
+				background-color:#000;
+				color:#fff;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+			}
+			
+			.nav li a:hover {
+				background-color:#434343;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:relative;
+			}
+			
+			.nav li ul li ul {
+				
+				top:0px;
+			}
+     button{
+     	background: blue;
+     	color:white;
+     }
+
+	</style>
+
+
+</head>
+
+
+	
+
+<body>
+
+
+
+
+	 <h1 align="center">Área de coins</h1>
+	 <br> 
+	 
+		<div id="header" align="right">
+			<ul class="nav">
+				<li><a href="https://equipodeb.github.io/CPEINMX/">Inicio</a></li>
+				<li><a href="">Cursos</a>
+					<ul>
+
+						<li><a href="#">Gratuitos y de paga:</a></li>	
+						<li><a onclick="noregistro()">HTML</li>
+						<li><a onclick="noregistro()">CSS</a></li>
+						<li><a onclick="noregistro()">JAVASCRIPT</a></li>
+						<li><a href="">No gratuitos:</a>
+							<ul>
+								<li><a href=""onclick="noregistro()">GIT</a></li>
+								<li><a href=""onclick="noregistro()">GITHUB</a></li>
+								<li><a href=""onclick="noregistro()">React</a></li>
+								<li><a href=""onclick="noregistro()">MYSQL</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="faq.html">Preguntas frecuentes</a>
+					
+			
+				</li>
+				<li><a href="Canjear.html">Canjear Coins </a></li>
+			</ul>
+		</div>
+
+
+	<div align="center">
+<br><br><br>
+ <table border="5"><tr><td align="center"><strong >¿Que son los coins?</strong><br><img src="coins.png" width="500" height="250"> 
+ 	<br>
+
+ 	Los coins son puntos abonados electronicamente a tu cuenta CPEIN. 
+<br>
+<button onclick="vendercoins()">Vender mis 50 Coins</button>
+<tr><td align="center"><strong ><br><br> ¿En qué puedo utilizarlos?</strong><br><img src="carrito.png" width="700" height="350"> <br>
+
+	
+ 	Los puedes utilizar para clases en vivo, o venderlos a otros usuarios.
+ 	 	<br>
+
+
+
+   
+<br>
+
+ 
+
+ </td></tr> 	
+
+
+
+
+
+ </td></tr></table>		
+
+
+ 
+
+	</div>
+
+
+
+
+
+</body>
+</html>

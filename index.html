@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Inicio a información de nuestro sitio web</title>
+	<link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="./css/styles.css">
+	<link rel="shortcut icon" href="img/logo.png">
+	
+		<style>
+		
+		.but{
+		
+			background-color:red;
+			color:yellow;
+		}
+
+
+	table{
+			border-color:yellow;
+			 border-spacing: 10px 5px;
+			 border-right:yellow;
+
+		}
+
+    
+		* {
+				margin:0px;
+				padding:0px;
+			}
+			
+			#header {
+				margin:auto;
+				width: 100%;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			
+			ul, ol {
+				list-style:none;
+			}
+			
+			.nav{
+				display: flex;
+				justify-content: center;
+			}
+			
+			.nav li a {
+				background-color:#000;
+				color:#fff;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+			}
+			
+			.nav li a:hover {
+				background-color:#434343;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:relative;
+			}
+			
+			.nav li ul li ul {
+				
+				top:0px;
+			}
+     button{
+     	background: blue;
+     	color:white;
+     }
+
+	</style>
+
+	<script>
+function noregistro(){
+
+var mensajes1;
+
+	mensajes1 =confirm ("Favor de registrarse para acceder a los cursos.");
+
+    if (mensajes1==true) {
+    	
+              
+            
+		alert("Serás redirigido a WhatsApp, ya que necesitamos confirmar tu cuenta.");
+
+				 window.location.href ="https://api.whatsapp.com/send?phone=+523787117904&text=!%20%20%20 %20%20%20%20Requiero registrarme para tomar cursos.";
+
+
+    }
+    //llave if
+
+    else{
+    	alert('Entendido. Sigue en la pagina');
+    }
+    // llave else
+
+}
+//llave funcion
+
+  function capturar(){
+			var coins;
+		coins  =confirm("Estas por recibir 50 Coins de regalo");
+         if (coins==true) {
+         location.href="in.html";
+
+         }
+
+         else{
+
+        alert("Entendido. Puede seguir navegando en la pagina");
+
+         }
+
+         }
+</script>
+
+</head>
+
+<body>
+	<div class="container">
+		<picture><img src="./img/logo.png" width="150px" height="50px"></picture>
+		<div class="free-coins">
+			<button onclick="capturar()">
+				Obtener 50 coins de regalo
+			</button>
+		</div>
+		<br>
+
+
+      <div id="header" align="right">
+			<ul class="nav">
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="">Cursos</a>
+					<ul>
+
+						<li><a href="#">Gratuitos y de paga:</a></li>	
+						<li><a onclick="noregistro()">HTML</li>
+						<li><a onclick="noregistro()">CSS</a></li>
+						<li><a onclick="noregistro()">JAVASCRIPT</a></li>
+						<li><a href="">No gratuitos:</a>
+							<ul>
+								<li><a href=""onclick="noregistro()">GIT</a></li>
+								<li><a href=""onclick="noregistro()">GITHUB</a></li>
+								<li><a href=""onclick="noregistro()">React</a></li>
+								<li><a href=""onclick="noregistro()">MYSQL</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="faq.html">Preguntas frecuentes</a>
+					
+			
+				</li>
+				<li><a href="Canjear.html">Canjear Coins </a></li>
+			</ul>
+		</div>
+		<br>
+
+		<div class="text-center">
+			<h1 class="">CPEINMX</h1>
+			<h5 class="">Ganar por aprender</h5>
+			<div class="nav">
+				<a href="#">Inicio</a>
+			</div>
+
+			<picture class="icon-logo">
+				<img src="./img/logo.png" width="150" height="50">
+			</picture>
+		</div>
+		
+		<!-- About Us -->
+		<div class="aboutUs">
+			<h3 class="hs">Sobre nosotros:</h3>
+			<p>Somos un sitio web dedicado a la gestión de cursos en linea.</p>
+			<h3 class="hs">Nuestra misión : </h3>
+			<p>ofrecer cursos con valor a nuestros alumnos, de forma remota, simple de
+				entender y con beneficios intelectuales y económicos para ellos.></p>
+
+			<h3 class="hs">Nuestra visión:</h3>
+			<p>Alcanzar a todas las personas que no cuentan con recursos económicos para
+				estudiar en universidades, ofreciendo sistemas y sub sistemas de ganancias con
+				nosotros; la idea no es que solo paguen por estudiar, si no que aprendan y una vez
+				aprendan logren llegar a mas comunidades con sus conocimientos y beneficios
+				económicos que nosotros les brindaremos para alcanzar a países enteros con nuestra
+				doctrina.
+			</p>
+			<h3 class="hs">Nuestros valores:</h3>
+			<p>Servicio a los demás, honradez, lealtad, ayuda mutua, consejos a estudiantes, valor
+				a la persona.
+			</p>
+		</div>
+		<!-- Courses -->
+		<div class="courses">
+			<h2 class="text-center">Nuestros Cursos</h2>
+			<div class="premiun">
+				<div class="premiun-left">
+					<h3>PLAN PREMIUM</h3>
+					<p>
+						<i>
+							Nuestros cursos garantizan eficiencia y calidad<br />Es por ello que le
+							invitamos a conocer más de<br />nuestros cursos sobre Programación ,React,
+							Git<br /> y GitHub. Para ingresar y poder<br /> Registrarse clic PayPal (pago) y
+							WhatsApp (registro):
+						</i>
+					</p>
+
+
+					<p>
+						<i>Nota: En el plan prémium usted recibe:<br />*Clases en vivo<br />*Asistencia por
+							videollamada <br />*Participar de futuros proyectos<br />*Ser instructor y
+							cobrar por ello
+						</i>
+
+					</p>
+				</div>
+				<div class="premiun-center">
+					<p><strong> Lo que el alumno aprenderá será:</p></strong>
+					<p>
+						<strong>
+							*Con HTML a crear increíbles páginas web <br />*Con CSS a dar estilos,
+							colores y todos los efectos pertenecientes a dichas páginas. <br />*Con JavaScript
+							las páginas las crearemos con más dinamismo para la interacción de
+							usuarios.
+						</strong>
+					</p>
+					<p><strong> Duración estimada:</p></strong>
+					<p>
+						<strong>
+							<br /> *1 mes aproximado <br />*1 hora por día de aprendizaje por medio de
+							videotutoriales <br />
+						</strong>
+					</p>
+					<p><strong> Al concluir sus estudios:</p></strong>
+					<p>
+						<strong>
+							<br />*El alumno podrá compartir su conocimiento con otros grupos y cobrar el
+							80% por ello <br />*Participar de proyectos como la creación de sitios web con
+							nosotros desde luego pagados. <br />*Cobrar el total de sus invitados al 100% del
+							bono por referido.
+						</strong>
+					</p>
+					<br />
+				</div>
+				<div class="premiun-rigth">
+					<p><u>$50 USD</u></p>
+					</p><strong>Paga en 2 inicio/fin por curso</strong></p>
+					<a
+						href="https://api.whatsapp.com/send?phone=+523787117904&text=Necesito!%20Ayuda%20%20Con %20%20%20%20Una clase de html"><img
+							src="./img/whatsapp.jpg" width="100" height="150">
+					</a>
+					<div id="smart-button-container">
+						<div style="text-align: center;">
+							<div id="paypal-button-container"></div>
+						</div>
+					</div>
+					<script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD"
+						data-sdk-integration-source="button-factory"></script>
+					<script>
+						function initPayPalButton() {
+							paypal.Buttons({
+								style: {
+									shape: 'rect',
+									color: 'gold',
+									layout: 'horizontal',
+									label: 'checkout',
+
+								},
+
+								createOrder: function (data, actions) {
+									return actions.order.create({
+										purchase_units: [{ "description": "Pago por curso adquirido  se abonan 25 USD y los otros 25USD se pagan al final del curso.", "amount": { "currency_code": "USD", "value": 25 } }]
+									});
+								},
+
+								onApprove: function (data, actions) {
+									return actions.order.capture().then(function (details) {
+										alert('Transaction completed by ' + details.payer.name.given_name + '!');
+									});
+								},
+
+								onError: function (err) {
+									console.log(err);
+								}
+							}).render('#paypal-button-container');
+						}
+						initPayPalButton();
+					</script>
+					<h3>Si no desea pagar con PayPal <br />Puede hacerlo al siguiente número de cuenta
+						BanCoppel:<br />4169160432141134
+					</h3>
+					<h4 class="YE">Nota: Una vez realice el depósito, favor de enviar captura del depósito por
+						WhatsAPP<br /> Para concluir su registro y acceso a las clases en vivo, Gracias.
+					</h4>
+				</div>
+			</div>
+			<hr>
+			<div class="free">
+				<div class="free-left">
+					<h3>PLAN FREE</h3>
+					<p>
+						<i>
+							Nuestros cursos garantizan eficiencia y calidad<br />Es por ello que le
+							invitamos a conocer más de<br />nuestros cursos sobre Programación ,React,
+							Git<br /> y GitHub. Para ingresar y poder<br /> Registrarse
+							WhatsApp (registro):
+						</i>
+					</p>
+
+
+					<p>
+						<i>Nota: En el PLAN FREE usted no tiene:<br />*Clases en vivo<br />*Asistencia por
+							videollamada <br />*Participar de futuros proyectos<br />*Ser instructor y
+							cobrar por ello.
+						</i>
+
+					</p>
+				</div>
+				<div class="free-center">
+					<p><strong> Lo que el alumno aprenderá será:</p></strong>
+					<p>
+						<strong>
+							Con HTML a crear increíbles páginas web <br />*Con CSS a dar estilos,
+							colores y todos los efectos pertenecientes a dichas páginas. <br />*Con javascrip
+							las paginas las crearemos con mas dinamismo para la interaccion de usuariosCon
+							JavaScript las páginas las crearemos con más dinamismo para la interacción de
+							usuarios.
+						</strong>
+					</p>
+					<p><strong> Duración estimada:</p></strong>
+					<p>
+						<strong>
+							<br /> *Conforme estudies. <br />*8 clases como maximo por dia . <br/><br>
+						</strong>
+					</p>
+					<p><strong> Al concluir sus estudios:</p></strong>
+					<p>
+						<strong>
+							<br />Al concluir sus estudios:*Cobrar el total de sus invitados al 100% del bono por
+							referido.
+						</strong>
+					</p>
+				</div>
+				<div class="free-rigth">
+					<p><u>Incluye publicidad</u></p>
+					<a
+						href="https://api.whatsapp.com/send?phone=+523787117904&text=Para registrarte!%20gratuitamente para el curso desde nuestro sitio web, por favor envia:%20%20 %20%20%20%20Nombre,telefono,correo electronico,pais y estado donde vives.(incluye publicidad)"><img
+						src="./img/whatsapp.jpg" width="100" height="150">
+					</a>
+					<p>
+						<i>Nota: En el PLAN FREE usted no tiene:<br />*Clases en vivo<br />*Asistencia por
+						videollamada <br />*Participar de futuros proyectos<br />*Ser instructor y
+						cobrar por ello.</i>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- Footer -->
+		<footer class="footer">
+			Datos generales:<br />
+			Álamos #366.<br />da
+			Los Álamos. <br />
+			Tepatitlan, Jalisco.<br />
+			México. <br /><br />
+
+			Contacto a distancia y redes:<br />
+			cpeintepatitlan@gmail.com<br>
+			3787117904<br>
+			(C) Todos los derechos reservados Cursos de Programación e Informática Extraordinaria.
+		</footer>
+
+		<!-- Messenger plugin de chat Code -->
+		<div id="fb-root"></div>
+		<script>
+			window.fbAsyncInit = function () {
+				FB.init({
+					xfbml: true,
+					version: 'v10.0'
+				});
+			};
+
+			(function (d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
+
+		<!-- Your plugin de chat code -->
+		<div class="fb-customerchat" attribution="page_inbox" page_id="101683185396987">
+		</div>
+		<script src="./js/main.js"></script>
+</body>
+
+</html>

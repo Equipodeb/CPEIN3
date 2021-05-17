@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fechas y horarios de clases</title>
+	<link rel="shortcut icon" href="logo.png">
+	<script>
+		
+		function duda(){
+
+			// Vamos a resolver las posibles dudas que pueda llegar a tener el usuario una vez que ingresa a esta pagina como seria: Que sucede si doy click en el enlace.
+
+			var si;  
+			//aqui se creo una variable, inicializada sin ningun tipo d valor
+		    var invitado="invitado";
+		    //aqui se creo una nueva variable con un valor "invitado"
+
+			si=prompt("Hola!soy alertbot deseas ser llamado por tu nombre mientras te ayudo?\nsi\nno ");
+			//aqui se utilizo la variable si para interactuar con el usuario por medio de prompt esto quiere decir que si prompt recibe el dato si o no la variable que anteriormente no tenia valor recibi un si o un no
+
+
+        if (si=="si") {
+        si= prompt("Entendido. Puedes indicarme como debo llamarte?");
+        alert(si+"Para mi es un placer poder llamarte asi, me parece que nos estamos teniendo mas confianza. Asi te llamare.");
+
+        }
+//aqui en este if se valida la variable si que recibe el valor "si" RECUERDA LA VARIABLE ESTABA EN 0 ahora el unico dato que aqui debe validar es si nada mas. Una vez lo reciba debe arrojar el mensaje alerta que va dentro de if
+        else{
+
+        	alert("Entendido. A partir de este momento me dirijo a ti como\t"+invitado);
+        }
+      
+       //si el usuario pone cancelar u otro valor que no sea solamente si entonces else evalua como falso y da el mensaje de alerta que da seria solamente entendido a partirr...
+
+       var ayuda1;
+
+       //aqui se siguio la regla de la creacion de el si un ayuda1 con valor cero
+        
+          var confirmando="si"; 
+          //aqui se crea una variable con un valor de tipo estring llamado si
+
+       ayuda1=prompt("Por favor elige como puedo ayudarte\n1.Debo dar click al enlace?\n2Que curso debo elegir?\n3.Por que solo es una clase en vivo y no mas?\n4.Necesito registrarme par recibir mi clase en vivo por mis 50 Coins? ");
+       //aqui hicimos lo mismo que con la variable si convertirla en un prompt y aqui es donde ayuda1 debe recibir uno de los valores descritos y debe ser enviados desde su caja de dialogo
+
+       if (ayuda1==1) {
+
+       	alert("Es necesario hacer click ya que necesitamos que ingreses a recibir tu clase en vivo desde Google Meet.");
+       }
+// explicacion de por que deberia dar click al enlace este if se evalua y si resulta que ayuda1 que se inicializo en 0 recibe un valor llamado opcion 1 debo dar click al enlace?... Entonces aqui estamos hablando de un valor de tipo entero mismo que fue impuesto en el if y no como el anterior un string.
+
+  if (ayuda1==2) {
+
+       	alert("Contamos con tres cursos que por ahora aplican para el cambio de los coins: HTML, CSS, JavaScript. Puedes elegir el que mejor te agrade en base a lo que buscas.\n HTML te ayudaria si lo que buscas es crear paginas web\nCSS Te serviria para complementar tus estilos a tus paginas web(entra en este si ya tienes conocimientos en html)\n3.JavaScript te ayudaria a interactuar con el usuario, para que te des una idea, mirame yo soy hijo de JavaScript, fui creado con el mismo. Asi que tu decide el que mejor te acomode. ");
+       }
+// explicacion de que lenguaje elegir aqui exactamente lo mismo que debe ser evaluada hasta aqui he anidado 2 if de modo que el sistema evalue cual de ambos es el que el usuario escribe y hacer que el usuario reciba todos los datos dentro de dicho if
+
+
+
+  if (ayuda1==3) {
+
+       	ayuda1= prompt("Nos gustaria poder contar con tu asistencia diariamente, pero ten en cuenta que nuestros profesores deben comer, asi como tu tambien puedes beneficiarte una vez termines tus estudios con nosotros, tenemos profesores que dependen de su trabajo. Ese es el motivo por el que solo tenemos una clase en vivo por tus 50 coins, pero calma! no te desanimes, si deseas recibir un curso completo mensualmente de alguno de los lenguajes antes mencionado solo necesitas ir a nuestra pagina de inicio para escoger nuestro curso premium o simplemente elegir nuestro curso gratuito, sigue los pasos y obten los beneficios.\nDeseas ir a la pagina de inicio?\nsi\nno");
+       	  if (ayuda1=="si") {
+          location.href="index.html";
+
+
+         }
+         	  if (ayuda1=="no") {
+         alert("Muy bien, sigue en la pagina.");
+          
+
+         
+}
+
+
+       	//aqui anidamos otro nuevo if que ya seria el tercer if con la finalidad de que el usuario escriba un valor tres que sera evaluado en la misma variable ayuda1 entonce aqui lo ideal seria reconvertir el tipo de dato a string o probar con valor int para evitar el error
+
+      	}	   
+// explicacion de por que solo es una clase y no mas
+
+ if (ayuda1==4) {
+
+       	alert("NO. No es necesario registrarse para recibir tu primer clase por tus 50 coins.");
+       }
+// explicacion de si es necesario registrarse o no para cobrar su clase por sus 50 coins
+
+
+
+		}
+		//llave de funcion
+	</script>
+
+	<style>
+		button{
+			color:yellow;
+			background:blue;
+		}
+	</style>
+</head>
+<body>
+<center>
+<h1 class="azul">Horarios a elegir para tu clase y fecha</h1>
+<br><br>
+<h3>Clacificacion HTML</h3>
+<a href="https://meet.google.com/swo-tgfn-tbi">HTML clase 1 por 50 Coins abonados a tu cuenta, solo 15 minutos de tolerancia general. horario de 10 a 11 am (CLICK)</a>
+<h3>Clacificacion CSS</h3>
+<a href="https://meet.google.com/swo-tgfn-tbi">css clase 1 por 50 Coins abonados a tu cuenta, solo 15 minutos de tolerancia general. horario de 11 a 12 am (CLICK)</a>
+<h3>Clacificacion JavaScript</h3>
+<a href="https://meet.google.com/swo-tgfn-tbi">JavaScript clase 1 por 50 Coins abonados a tu cuenta, solo 15 minutos de tolerancia general. horario de 12 a 1 pm (CLICK)</a>
+<br><br>
+
+<button onclick="duda()">Necesito ayuda</button>
+</body>
+</html>
